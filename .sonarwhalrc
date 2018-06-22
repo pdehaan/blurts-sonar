@@ -1,0 +1,19 @@
+{
+  "extends": ["web-recommended"],
+  "formatters": ["stylish"],
+  "ignoredUrls": [
+    {
+      "domain": "code.cdn.mozilla.net",
+      "rules": ["*"]
+    }
+  ],
+  "rules": {
+    "content-type": "off",
+    "http-cache": "off",
+    "http-compression": "off",
+    "no-friendly-error-pages": "warning",
+    "no-html-only-headers": "off",
+    "sri": "off",
+    "x-content-type-options": "off"
+  }
+}
