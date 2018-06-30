@@ -5,10 +5,12 @@
   "dependencies": {
     "@sonarwhal/configuration-web-recommended": "6.1.0",
     "@sonarwhal/formatter-stylish": "2.0.4",
+    "execa": "0.10.0",
+    "meow": "5.0.0",
     "npm-run-all": "4.1.3",
     "sonarwhal": "1.11.2"
   },
-  "homepage": "https://blurts-server.stage.mozaws.net",
+  "homepage": "https://monitor.firefox.com",
   "keywords": [
     "sonar",
     "scan"
