@@ -7,7 +7,6 @@
     "@sonarwhal/formatter-stylish": "2.0.4",
     "execa": "0.10.0",
     "meow": "5.0.0",
-    "npm-run-all": "4.1.3",
     "sonarwhal": "1.11.2"
   },
   "homepage": "https://monitor.firefox.com",
@@ -17,10 +16,7 @@
   ],
   "license": "MPL-2.0",
   "scripts": {
-    "scan": "npm-run-all scan:*",
-    "scan:breach": "sonarwhal $npm_package_homepage/?breach=Adobe",
-    "scan:homepage": "sonarwhal $npm_package_homepage",
-    "test": "npm run scan",
-    "ver": "echo '{\"version\": \"'$npm_package_version'\"}' > ver.json"
+    "scan": "sonarwhal $npm_package_homepage $npm_package_homepage/?breach=Adobe",
+    "test": "npm run scan"
   }
 }
