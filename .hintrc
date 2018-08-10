@@ -1,13 +1,19 @@
 {
-  "extends": ["web-recommended"],
+  "extends": [
+    "web-recommended"
+  ],
   "formatters": ["stylish"],
   "ignoredUrls": [
     {
       "domain": "code.cdn.mozilla.net",
-      "rules": ["*"]
+      "hints": ["*"]
+    },
+    {
+      "domain": "www.google-analytics.com",
+      "hints": ["*"]
     }
   ],
-  "rules": {
+  "hints": {
     "content-type": "off",
     "http-cache": "off",
     "http-compression": "off",
