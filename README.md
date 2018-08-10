@@ -1,2 +1,3 @@
 # blurts-sonar
-Sonar config for the Firefox Monitor server.
+
+[**webhint**](https://webhint.io/) config for the Firefox Monitor server.

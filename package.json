@@ -1,22 +1,27 @@
 {
   "name": "blurts-sonar",
-  "version": "1.0.0",
+  "description": "webhint config for the Firefox Monitor server.",
+  "version": "2.0.0",
   "author": "Moe Zilla",
-  "dependencies": {
-    "@sonarwhal/configuration-web-recommended": "6.1.0",
-    "@sonarwhal/formatter-stylish": "2.0.4",
-    "execa": "0.10.0",
-    "meow": "5.0.0",
-    "sonarwhal": "1.11.2"
+  "bugs": {
+    "url": "https://github.com/pdehaan/blurts-sonar/issues"
   },
+  "dependencies": {
+    "@hint/configuration-web-recommended": "1.0.1",
+    "@hint/formatter-stylish": "1.0.0",
+    "hint": "3.0.1"
+  },
+  "devDependencies": {},
   "homepage": "https://monitor.firefox.com",
   "keywords": [
-    "sonar",
-    "scan"
+    "hint",
+    "scan",
+    "sonar"
   ],
   "license": "MPL-2.0",
+  "repository": "pdehaan/blurts-sonar",
   "scripts": {
-    "scan": "sonarwhal $npm_package_homepage $npm_package_homepage/?breach=Adobe",
+    "scan": "hint $npm_package_homepage $npm_package_homepage/?breach=Adobe",
     "test": "npm run scan"
   }
 }
